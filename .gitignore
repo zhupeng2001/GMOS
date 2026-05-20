@@ -1,2 +1,7 @@
 logs/
 logs/*
+checkpoints/
+checkpoints/*
+*.pth
+*.ckpt
+*.model
