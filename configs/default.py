@@ -6,7 +6,7 @@ _CN.suffix ='OSdata'
 _CN.iters = 12
 _CN.gamma = 0.85
 _CN.max_flow = 400
-_CN.batch_size = 2
+_CN.batch_size = 4
 _CN.sum_freq = 100
 _CN.val_freq = 5000000
 _CN.image_size = [400, 400]
@@ -34,7 +34,7 @@ _CN.featureformer.attention_type = 'swin'
 _CN.featureformer.ffn_dim_expansion = 4
 _CN.featureformer.attn_splits = 2
 # Cross-Mamba配置
-_CN.featureformer.use_cross_mamba = False  # 是否使用Cross-Mamba替换Cross-Attention
+_CN.featureformer.use_cross_mamba = True   # 启用Cross-Mamba替换Cross-Attention
 _CN.featureformer.mamba_d_state = 16       # Mamba状态维度
 _CN.featureformer.mamba_d_conv = 4         # Mamba卷积核大小
 _CN.featureformer.mamba_expand = 2         # Mamba扩展因子
@@ -82,6 +82,11 @@ _CN.featureformerwithlbl.feature_channels = 256
 _CN.featureformerwithlbl.attention_type = 'swin'
 _CN.featureformerwithlbl.ffn_dim_expansion = 4
 _CN.featureformerwithlbl.attn_splits = 2
+# Cross-Mamba配置
+_CN.featureformerwithlbl.use_cross_mamba = True   # 启用Cross-Mamba替换Cross-Attention
+_CN.featureformerwithlbl.mamba_d_state = 16       # Mamba状态维度
+_CN.featureformerwithlbl.mamba_d_conv = 4         # Mamba卷积核大小
+_CN.featureformerwithlbl.mamba_expand = 2         # Mamba扩展因子
 
 # encoder
 _CN.featureformerwithlbl.pretrain = True
